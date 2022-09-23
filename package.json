@@ -23,11 +23,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/code-renesanse/swen-translator"
+    "url": "https://github.com/code-renesanse/swen-languages"
   },
   "dependencies": {
-    "swen-dom": "^0.1.5",
+    "swen-dom": "^0.1.6",
     "swen-logger": "^0.0.5",
-    "swen-types": "^1.0.19"
+    "swen-types": "^1.0.20"
   }
 }
