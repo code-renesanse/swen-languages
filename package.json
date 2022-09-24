@@ -47,16 +47,16 @@
         "@size-limit/preset-small-lib": "^8.1.0",
         "@typescript-eslint/eslint-plugin": "^5.38.0",
         "@typescript-eslint/parser": "^5.38.0",
-        "eslint": "^8.23.1",
+        "eslint": "^8.24.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-standard-with-typescript": "^23.0.0",
         "eslint-plugin-import": "^2.26.0",
         "husky": "^8.0.1",
         "size-limit": "^8.1.0",
-        "swen-types": "^2.0.1",
+        "swen-types": "^2.0.2",
         "tsdx": "^0.14.1",
         "tslib": "^2.4.0",
-        "typescript": "^3.9.10"
+        "typescript": "^4.8.3"
     },
     "dependencies": {
         "@types/webpack": "^5.28.0",
