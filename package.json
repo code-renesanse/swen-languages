@@ -1,0 +1,68 @@
+{
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "typings": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "start": "tsdx watch",
+        "build": "tsdx build",
+        "test": "tsdx test",
+        "lint": "tsdx lint",
+        "prepare": "tsdx build",
+        "size": "size-limit",
+        "analyze": "size-limit --why"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "tsdx lint"
+        }
+    },
+    "prettier": {
+        "printWidth": 80,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "es5"
+    },
+    "name": "swen-languages",
+    "author": "Tilen Okretic",
+    "module": "dist/swen-languages.esm.js",
+    "size-limit": [
+        {
+            "path": "dist/swen-languages.cjs.production.min.js",
+            "limit": "10 KB"
+        },
+        {
+            "path": "dist/swen-languages.esm.js",
+            "limit": "10 KB"
+        }
+    ],
+    "devDependencies": {
+        "@size-limit/preset-small-lib": "^8.1.0",
+        "@typescript-eslint/eslint-plugin": "^5.38.0",
+        "@typescript-eslint/parser": "^5.38.0",
+        "eslint": "^8.23.1",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-standard-with-typescript": "^23.0.0",
+        "eslint-plugin-import": "^2.26.0",
+        "husky": "^8.0.1",
+        "size-limit": "^8.1.0",
+        "swen-types": "^2.0.1",
+        "tsdx": "^0.14.1",
+        "tslib": "^2.4.0",
+        "typescript": "^3.9.10"
+    },
+    "dependencies": {
+        "@types/webpack": "^5.28.0",
+        "@types/webpack-env": "^1.18.0",
+        "i": "^0.3.7",
+        "swen-dom": "^0.2.1",
+        "swen-logger": "^0.1.0"
+    }
+}
